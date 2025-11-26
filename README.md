@@ -84,3 +84,33 @@ http://localhost:8000/api/v2/
 
 ✔ KoBo Assets (Enketo):
 http://localhost:8080
+
+To access KoboToolbox running on Docker Desktop (Windows) at:
+
+URL: http://kf.kobo.local
+User: super_admin
+Password: 5j18RwKDLDJKGvMDe03E
+
+
+you must fix local DNS resolution, because “*.local” domains do not resolve automatically on Windows.
+
+Here is the correct way to access it 👇
+
+✅ Step 1 — Add hosts entries in Windows
+
+Open Notepad as Administrator
+
+Go to File → Open
+
+Open the file:
+
+C:\Windows\System32\drivers\etc\hosts
+
+
+Add these lines at the bottom:
+
+127.0.0.1   kf.kobo.local
+127.0.0.1   kc.kobo.local
+127.0.0.1   ee.kobo.local
+
+Save the file.
